@@ -1,0 +1,12 @@
+.movingContainer {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  padding: 10px 0px;
+  color: rgb(189, 31, 3);
+}
+
+.staticText {
+  font-size: 18px;
+  font-weight: 600;
+  padding: 0px 10px;
+}
