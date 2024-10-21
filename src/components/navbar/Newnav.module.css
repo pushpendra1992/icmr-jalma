@@ -1,26 +1,34 @@
-.logoContainer {
-  text-align: center;
-  width: 100%;
-  height: auto;
+.container {
+  height: 80px;
+  display: grid;
+  grid-template-columns: 2fr 10fr;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-.logoContainer img {
+.logo {
+  height: 100px;
+  box-sizing: border-box;
+  text-align: center;
+  height: auto;
+  overflow: hidden;
+}
+
+.logo img {
   width: 100%;
   height: auto;
-  object-fit: cover;
 }
 .navbarContainer {
   display: flex;
   justify-content: center;
   padding: 10px 0px 10px 0px;
   margin-top: 10px;
-  border-top: 1px solid #ccd9ff;
+  justify-content: end;
 }
 .navbarItems {
   position: relative;
   color: #223160;
   font-size: 16px;
-  font-weight: 600;
   padding: 0px 10px;
 }
 .navbarTypo {

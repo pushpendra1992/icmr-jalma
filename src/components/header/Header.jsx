@@ -1,5 +1,5 @@
 import React from "react";
-import Important from "../important/Important";
+import styles from "./Header.module.css";
 import Navbar from "../navbar/Navbar";
 import { useMediaQuery } from "react-responsive";
 import SideNavbar from "../navbar/SideNavbar";
@@ -8,8 +8,7 @@ const Header = () => {
   const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1200px)" });
 
   return (
-    <div>
-      <Important />
+    <div className={styles.container}>
       {isTabletOrMobile ? <SideNavbar /> : <Navbar />}
     </div>
   );
